@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fyber Marketplace</string>
+    <string name="title_app_name">Fyber Marketplace</string>
+    <string name="appID_edit_message">App ID</string>
+    <string name="spotID_edit_message">Spot ID</string>
+    <string name="log_messages">Log messages</string>
+    <string name="load_banner">Load banner</string>
+    <string name="load_rectangle">Load rectangle</string>
+    <string name="load_interstitial">Load Interstitial</string>
+    <string name="show_interstitial">Show Interstitial</string>
+
+</resources>

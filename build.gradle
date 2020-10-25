@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+group = 'com.fyber.marketpalce'
+description = "Marketplace SDK Sample code"
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+
+    maven {
+        url  "https://fyber.bintray.com/marketplace"
+    }
+
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.fyber.marketplace.sample"
+        versionCode 1
+        versionName "1.0.0"
+        minSdkVersion 16
+        targetSdkVersion 29
+    }
+
+}
+
+def fyberMarketplaceVersion = '7.7.2'
+
+dependencies {
+    implementation "com.fyber.vamp:core-sdk:${fyberMarketplaceVersion}"
+    implementation "com.fyber.vamp:video-kit:${fyberMarketplaceVersion}"
+    implementation "com.fyber.vamp:mraid-kit:${fyberMarketplaceVersion}"
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.appcompat:appcompat:1.2.0"
+}
